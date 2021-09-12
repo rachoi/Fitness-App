@@ -1,0 +1,138 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  font-size: larger;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 700px;
+}
+
+#workoutImage {
+  max-width: 70%;
+}
+
+#logo {
+  max-width: 50%;
+  margin: 15% 0px;
+}
+
+.container { 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2560px;
+}
+
+#divs {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.infoDiv {
+  background-color: #f2f2f2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoDiv .workoutMsg {
+  max-width: 50%;
+}
+
+.loginDiv {
+  background-color: #333333;
+}
+
+.loginSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginWMsg {
+  color: rgb(102, 223, 213);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.loginRMsg {
+  color: white;
+  text-align: center;
+}
+
+.loginRef {
+  text-decoration: none;
+  text-align: center;
+}
+
+.googleLogin {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 3px;
+  color: #494242;
+  margin-bottom: 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.googleLogin:hover {
+  cursor: pointer; 
+}
+
+
+@media only screen and (max-width: 425px) {
+  .container { 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 2560px;
+  }
+
+  #divs {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .workoutMsg, .loginWMsg, .loginSection {
+    font-size: 35px;
+  }
+
+}
